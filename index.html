@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border:none;
+        }
+
+        .top{
+            width: 100%;
+            height: 180px;
+            /*background: pink;*/
+            /*text-align: center;*/
+        }
+        .top .logo{
+            width: 210px;
+            height: 50px;
+            background:url("images/logo.png");
+            /*background: red;*/
+            margin:20px auto;
+        }
+        .top .logo h1{
+            text-indent:-9999px;
+        }
+        .top .nav{
+            width: 600px;
+            height: 50px;
+            margin: 0 auto;
+            /*background: blue;*/
+            padding: 30px;
+
+
+        }
+        .top .nav input[type=text]{
+            width: 500px;
+            height: 40px;
+            border: 1px solid #fd0001;
+            float: left;
+        }
+        .top .nav button{
+            width: 90px;
+            height: 42px;
+            text-align: center;
+            color: white;
+            float: left;
+            background: #fd0001;
+        }
+        .content{
+            width: 900px;
+            height: 1200px;
+            border: 1px solid #cccccc;
+            margin: 0 auto;
+        }
+        .content ol{
+            width: 900px;
+            height: 40px;
+            border-bottom: 1px solid #cccccc;
+
+        }
+        .content ol li{
+            list-style: none;
+            float: left;
+            width: 100px;
+            line-height: 40px;
+            color: white;
+            text-align: center;
+            background: #666666;
+        }
+        .content ul li{
+            list-style: none;
+            border-bottom: 1px solid #ccc;
+            line-height: 40px;
+            height: 40px;
+        }
+        .content ul li input{
+            float: left;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .content ul li p{
+            line-height: 40px;
+            overflow: hidden;
+            float: left;
+            width: 750px;
+            height: 40px;
+            background: pink;
+        }
+        .content ul li a{
+            float: left;
+            text-decoration: none;
+            margin-left: 20px;
+
+        }
+        /*蒙版部分*/
+        .wrap{
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.4);
+            position: relative;
+        }
+        .wrap .box{
+            width: 300px;
+            height: 300px;
+            background: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -150px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .wrap .box p{
+            width: 240px;
+            overflow: hidden;
+            background: pink;
+            height: 25px;
+        }
+        .wrap .box span{
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            right: 10px;
+            top: 10px;
+        }
+        .wrap .box textarea{
+            width: 280px;
+            height: 120px;
+            background: #cccccc;
+            border: 1px solid #fd0001;
+            margin: 10px;
+            resize: none;
+        }
+        .wrap .box button{
+            width: 100px;
+            height: 30px;
+            background: #fd0001;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 5px;
+            margin-left: 180px;
+        }
+    </style>
+
+</head>
+<body>
+<!--<div class="wrap">-->
+<!--t头部部分-->
+<div class="top">
+    <!--//logo部分-->
+    <div class="logo">
+        <h1>小码哥教育</h1>
+    </div>
+    <!--//添加部分-->
+    <div class="nav">
+        <input type="text">
+        <button>添加</button>
+    </div>
+</div>
+<!--//主体部分-->
+<div class="content">
+    <ol>
+        <li>待办事项</li>
+        <li>已完成事项</li>
+    </ol>
+    <ul>
+        <!--<li>-->
+            <!--<input type="checkbox">-->
+            <!--<p></p>-->
+            <!--<a href="#">详情</a>-->
+            <!--<a href="#">删除</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<input type="checkbox">-->
+            <!--<p></p>-->
+            <!--<a href="#">详情</a>-->
+            <!--<a href="#">删除</a>-->
+        <!--</li>-->
+    </ul>
+</div>
+
+<!--蒙版部分-->
+
+    <!--中间白色盒子部分-->
+    <!--<div class="box">-->
+        <!--&lt;!&ndash;存放等待更改的li的数据&ndash;&gt;-->
+        <!--<p></p>-->
+        <!--&lt;!&ndash;关闭&ndash;&gt;-->
+        <!--<span class="close">关闭</span>-->
+        <!--&lt;!&ndash;输入更新的内容&ndash;&gt;-->
+        <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+        <!--<button>更新</button>-->
+
+
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>
